@@ -4,22 +4,23 @@ from usuarios.operaciones import (
     crear_usuario,
     buscar_por_id,
     mostrar_usuarios,
-    eliminar_usuario
+    eliminar_usuario,
 )
 
 
 def menu():
+    """Ejecuta el menú principal de gestión de usuarios."""
     cargar_usuarios()
 
     while True:
-        print("\n---MENU---\n")
-        print("1. agregar usuario")
-        print("2. buscar usuario por id")
-        print("3. mostrar lista")
-        print("4. eliminar usuario")
-        print("5. salir")
+        print("\n--- MENÚ ---\n")
+        print("1. Agregar usuario")
+        print("2. Buscar usuario por ID")
+        print("3. Mostrar lista")
+        print("4. Eliminar usuario")
+        print("5. Salir")
 
-        opcion = input("elige una opcion: ")
+        opcion = input("Elige una opción: ").strip()
 
         if opcion == "1":
             crear_usuario()
@@ -34,8 +35,8 @@ def menu():
             eliminar_usuario()
 
         elif opcion == "5":
-            print("chau")
+            print("Hasta luego")
             break
 
         else:
-            print("opcion no válida")
+            print("Opción no válida")
