@@ -1,26 +1,33 @@
-from usuarios.archivo import cargar_usuarios
-
-from usuarios.operaciones import (
-    crear_usuario,
-    buscar_por_id,
-    mostrar_usuarios,
-    eliminar_usuario,
-)
+try:
+    from .tests.usuarios.archivo import cargar_usuarios
+    from .tests.usuarios.operaciones import (
+        crear_usuario,
+        buscar_por_id,
+        mostrar_usuarios,
+        eliminar_usuario,
+    )
+except ImportError:
+    from proyecto.tests.usuarios.archivo import cargar_usuarios
+    from proyecto.tests.usuarios.operaciones import (
+        crear_usuario,
+        buscar_por_id,
+        mostrar_usuarios,
+        eliminar_usuario,
+    )
 
 
 def menu():
-    """Ejecuta el menú principal de gestión de usuarios."""
     cargar_usuarios()
 
     while True:
-        print("\n--- MENÚ ---\n")
-        print("1. Agregar usuario")
-        print("2. Buscar usuario por ID")
-        print("3. Mostrar lista")
-        print("4. Eliminar usuario")
-        print("5. Salir")
+        print("\n---MENU---\n")
+        print("1. agregar usuario")
+        print("2. buscar usuario por id")
+        print("3. mostrar lista")
+        print("4. eliminar usuario")
+        print("5. salir")
 
-        opcion = input("Elige una opción: ").strip()
+        opcion = input("elige una opcion: ")
 
         if opcion == "1":
             crear_usuario()
@@ -35,8 +42,8 @@ def menu():
             eliminar_usuario()
 
         elif opcion == "5":
-            print("Hasta luego")
+            print("chau")
             break
 
         else:
-            print("Opción no válida")
+            print("opcion no válida")

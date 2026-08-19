@@ -1,4 +1,4 @@
-from usuarios.validaciones import (
+from proyecto.tests.usuarios.validaciones import (
     validar_nombre,
     validar_edad,
     validar_correo
@@ -27,6 +27,9 @@ def test_validar_edad_texto():
 
 def test_validar_edad_negativa():
     assert validar_edad("-5") == False
+
+def test_validar_edad_imposible():
+    assert validar_edad("150") == False
 
 
 def test_validar_correo_correcto():

@@ -1,5 +1,5 @@
-from usuarios.datos import usuarios
-from usuarios.operaciones import generar_id
+from proyecto.tests.usuarios.datos import usuarios
+from proyecto.tests.usuarios.operaciones import generar_id
 
 
 def setup_function():
