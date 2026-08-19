@@ -2,7 +2,7 @@
 
 Proyecto desarrollado en Python para practicar la gestión de usuarios, la separación del código en módulos y la automatización de pruebas mediante pytest.
 
-#Descripción
+# Descripción
 
 Este proyecto implementa un sistema básico de gestión de usuarios desde la terminal.
 
@@ -18,7 +18,7 @@ Ejecutar pruebas automatizadas con pytest.
 
 El proyecto está organizado en diferentes módulos para separar las responsabilidades y facilitar el mantenimiento del código.
 
-#Tecnologías utilizadas
+# Tecnologías utilizadas
 
 Python
 Pytest
@@ -26,7 +26,7 @@ Archivos de texto .txt
 Git
 GitHub
 
-#Estructura del proyecto
+# Estructura del proyecto
 
 automatizacion/
 │
@@ -50,7 +50,7 @@ automatizacion/
         ├── test_operaciones.py
         └── test_validaciones.py
 
-#Módulos principales
+# Módulos principales
 
 main.py
 
@@ -132,7 +132,7 @@ Para obtener una salida más detallada:
 
 pytest -v
 
-#Ejecutar el programa
+# Ejecutar el programa
 
 Clona el repositorio:
 
@@ -158,7 +158,7 @@ usuarios.txt
 
 El sistema puede cargar los usuarios existentes al iniciar y guardar los cambios realizados durante la ejecución.
 
-#Objetivo del proyecto
+# Objetivo del proyecto
 
 El objetivo principal es practicar conceptos de desarrollo de software en Python, especialmente:
 
@@ -170,7 +170,7 @@ Estructuras de datos.
 Pruebas automatizadas.
 Uso de Git y GitHub.
 
-#Autor
+# Autor
 
 Francisco Quintana
 
